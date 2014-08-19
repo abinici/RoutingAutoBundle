@@ -75,7 +75,7 @@ class AutoRouteListener
                         $persistedRoutes[$id] = true;
                     }
 
-                    $uow->computeChangeSets();
+//                    $uow->computeChangeSets();
 
                     // For some reason the AutoRoute is not updated even though
                     // it is persisted above. Re-persisting and recomputing the
@@ -84,7 +84,7 @@ class AutoRouteListener
                         $dm->persist($autoRoute);
                     }
 
-                    $uow->computeChangeSets();
+//                    $uow->computeChangeSets();
                 }
             }
         }
